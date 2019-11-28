@@ -6,5 +6,10 @@ export default (contacts, { text }) => {
     const numberMatch = contact.number.toLowerCase().includes(text.toLowerCase());
 
     return  textMatch || numberMatch;
+  }).sort((a, b) => {
+    var aName = a.name.toLowerCase();
+    var bName = b.name.toLowerCase(); 
+    return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
   });
 };
+

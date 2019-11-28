@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const ContactListItem = ({ id, name, number }) => (
   <Link className="list-item" to={`/edit/${id}`}>
     <div>
-      <h3 className="list-item__title">{name}</h3>
+      <p className="list-item__title">{name}</p>
     </div>
-    <h3 className="list-item__data">{number}</h3>
+    <p className="list-item__data">{number}</p>
   </Link>
 );
 

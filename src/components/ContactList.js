@@ -6,7 +6,7 @@ import selectContacts from '../selectors/contacts';
 export const ContactList = (props) => (
   <div className="content-container">
     <div className="list-header">
-      <div className="show-for-mobile">Name</div>
+      <div className="show-for-mobile">Contacts</div>
       <div className="show-for-desktop">Name</div>
       <div className="show-for-desktop">Number</div>
     </div>
